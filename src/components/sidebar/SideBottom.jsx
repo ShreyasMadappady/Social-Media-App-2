@@ -1,6 +1,6 @@
 function SideBottom() {
   return (
-    <div className="flex flex-col   rounded-2xl bg-white w-3/12">
+    <div className="flex flex-col   rounded-2xl bg-white ">
       <h1 className="font-bold flex items-center py-2 pl-9 hover:bg-gray-200 rounded-t-2xl gap-5 text-lg ">
         <svg
           className="w-6"

@@ -1,4 +1,4 @@
-import img1 from '../../images/images.png'
+import img1 from "../../images/images.png";
 
 function HeaderMain() {
   return (
@@ -11,11 +11,11 @@ function HeaderMain() {
         type="text"
         placeholder="Search"
       />
-      <div className='flex gap-5' >
+      <div className="flex gap-5">
         <button className="bg-blue-500 text-white px-4 py-2 rounded-full ">
           Create
         </button>
-        <img className='w-10 h-10' src={img1} alt="" />
+        <img className="w-10 h-10" src={img1} alt="" />
       </div>
     </div>
   );
