@@ -2,9 +2,9 @@ import MessageItem from "./MessageItem";
 
 function MessageMain() {
   return (
-    <div className=" bg-white rounded-2xl p-3">
-      <div className="flex justify-between">
-        <h1>Messages</h1>
+    <div className=" bg-white rounded-2xl pt-3">
+      <div className="flex justify-between px-3 pb-2">
+        <h1 className="font-bold">Messages</h1>
         <svg
           xmlns="http://www.w3.org/2000/svg"
           width="32"
@@ -19,9 +19,9 @@ function MessageMain() {
       <input
         type="text"
         placeholder="Search Messages"
-        className="rounded-full px-2 py-[3px] w-full"
+        className="rounded-full px-2 py-[3px] w-10/12 bg-gray-200 ml-5"
       />
-      <div className="flex  py-3 text-sm justify-between">
+      <div className="flex  pt-3 text-sm justify-between px-3">
         <h1 className="border-b-2 p-1 border-b-slate-400  font-semibold">
           Primary
         </h1>
@@ -32,7 +32,6 @@ function MessageMain() {
           Requestes
         </h1>
       </div>
-      <MessageItem />
       <MessageItem />
       <MessageItem />
       <MessageItem />

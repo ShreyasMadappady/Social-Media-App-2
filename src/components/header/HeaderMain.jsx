@@ -2,7 +2,7 @@ import img1 from "../../images/images.png";
 
 function HeaderMain() {
   return (
-    <div className="flex justify-between  px-40 py-4 bg-white">
+    <div className="flex justify-between  px-40 py-4 bg-white fixed w-full z-30">
       <h1 className="text-sky-600 text-2xl font-bold">
         Uni<span className="text-black">Verse</span>{" "}
       </h1>
