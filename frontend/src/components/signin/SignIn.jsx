@@ -1,19 +1,21 @@
 import { useState } from "react";
+import axios from "axios";
 
-function SignIn() {
+function SignIn({ handleAuth }) {
   const [username, setUsername] = useState({});
   const [passsword, setPassword] = useState({});
 
   const sendRequest = async () => {
-    const res = await fetch(
+    const res = await axios.get(
       `http://localhost:3000/signin?username=${username}?password=${passsword}`
     );
-    const data = await res.json();
-    console.log(data);
+    console.log(res.data.Token);
+    localStorage.setItem("Authorization", res.data.Token);
+    handleAuth(true);
   };
 
   return (
-    <div>
+    <div className="mx-96 my-52">
       <input
         type="text"
         placeholder="Username"
